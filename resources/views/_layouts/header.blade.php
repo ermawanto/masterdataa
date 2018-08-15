@@ -18,9 +18,9 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="{{route('customers.index')}}">Customer</a></li>
-            <li><a href="api/material">Material</a></li>
-            <li><a href="api/plantsloc">Plantsloc</a></li>
-            <li><a href="api/wilayah">Wilayah</a></li>
+            <li><a href="{{route('material.index')}}">Material</a></li>
+            <li><a href="{{route('plantsloc.index')}}">Plantsloc</a></li>
+            <li><a href="{{route('wilayah.index')}}">Wilayah</a></li>
           </ul>
         </li>
       </ul>

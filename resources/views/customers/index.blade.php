@@ -7,7 +7,7 @@
         <h1>Customers</h1>
       </div>
       <div class="col-md-6 text-right">
-        <a href="#" class="btn btn-success btn-md buat" >Buat</a>
+        <a href="{{route('customers.create')}}" class="btn btn-success btn-md buat" >Buat</a>
       </div>
     </div>
     <hr class="dashed mb20 mt20">

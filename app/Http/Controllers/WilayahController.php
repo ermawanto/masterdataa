@@ -8,7 +8,11 @@ use Illuminate\Http\Request;
 
 class WilayahController extends Controller {
 
-	public function index() {
+	public function index(){
+		return view('wilayah.index');
+	}
+
+	public function show() {
 		$wilayah = Wilayah::all();
 		return response()->json($wilayah);
 		// return 'controller bisa';

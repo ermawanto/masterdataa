@@ -8,7 +8,11 @@ use Illuminate\Http\Request;
 
 class PlantslocController extends Controller {
 
-	public function index() {
+	public function index(){
+		return view('plantsloc.index');
+	}
+
+	public function show() {
 		$plantsloc = Plantsloc::all();
 		return response()->json($plantsloc);
 		// return 'controller bisa';

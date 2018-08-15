@@ -17,6 +17,14 @@ class CustomerController extends Controller {
 		return response()->json($customer);
 	}
 
+	public function create(){
+		return view('customers.form');
+	}
+
+	public function edit($id){
+		return view('customers.form',['id'=>$id]);
+	}
+
 	public function detailCustomer($id) {
 		$customer = Customer::find($id);
 		return response()->json($customer);

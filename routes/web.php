@@ -22,16 +22,10 @@ $app->group(['namespace' => 'auth'], function($app){
 	$app->post('/register',['as'=>'toRegister','uses'=>'Register@toLogin']);
 });
 
-// $app->group(['namespace' => 'App\Http\Controller'], function ($app) {
-// 	$api = 'api';
-// 	// $app->get('api/pelanggan', 'CustomerController@index');
-// 	$app->get($api . '/customer/{id}', ['uses' => 'CustomerController@detailCustomer', 'as' => 'detailCustomer']);
-// 	$app->post($api . '/customer', ['uses' => 'CustomerController@saveCustomer', 'as' => 'saveCustomer']);
-// 	$app->put($api . '/customer/{id}', ['uses' => 'CustomerController@updateCustomer', 'as' => 'updateCustomer']);
-// 	$app->delete($api . '/customer/{id}', ['uses' => 'CustomerController@deleteCustomer', 'as' => 'deleteCustomer']);
-// });
-
 $app->get('customers',['uses' => 'CustomerController@index', 'as' => 'customers.index']);
+$app->get('customers/create',['uses' => 'CustomerController@create','as'=>'customers.create']);
+$app->get('customers/edit/{id}',['uses' => 'CustomerController@edit', 'as' => 'customers.edit']);
+
 $app->get('api/customers','CustomerController@show');
 $app->post('api/customers','CustomerController@saveCustomer');
 $app->put('api/customers/{id}','CustomerController@updateCustomer');

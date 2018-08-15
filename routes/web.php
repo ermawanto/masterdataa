@@ -42,17 +42,20 @@ $app->post('api/user','UserController@saveUser');
 $app->put('api/user/{id}','UserController@updateUser');
 $app->delete('api/user/{id}','UserController@deleteUser');
 
-$app->get('api/material','MaterialController@index');
+$app->get('material',['uses' => 'MaterialController@index', 'as' => 'material.index']);
+$app->get('api/material','MaterialController@show');
 $app->post('api/material','MaterialController@saveMaterial');
 $app->put('api/material/{id}','MaterialController@updateMaterial');
 $app->delete('api/material/{id}','MaterialController@deleteMaterial');
 
-$app->get('api/plantsloc','PlantslocController@index');
+$app->get('plantsloc',['uses' => 'PlantslocController@index', 'as' => 'plantsloc.index']);
+$app->get('api/plantsloc','PlantslocController@show');
 $app->post('api/plantsloc','PlantslocController@savePlantsloc');
 $app->put('api/plansloc/{id}','PlantslocController@updatePlantsloc');
 $app->delete('api/plantsloc/{id}','PlantslocController@deletePlantsloc');
 
-$app->get('api/wilayah','WilayahController@index');
+$app->get('wilayah',['uses' => 'WilayahController@index', 'as' => 'wilayah.index']);
+$app->get('api/wilayah','WilayahController@show');
 $app->post('api/wilayah','WilayahController@saveWilayah');
 $app->put('api/wilayah/{id}','WilayahController@updateWilayah');
 $app->delete('api/wilayah/{id}','WilayahController@deleteWilayah');

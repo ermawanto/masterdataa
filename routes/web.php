@@ -12,7 +12,7 @@
 */
 
 $app->get('/', function(){
-	return 'Wellcome';
+	return view('welcome');
 });
 
 $app->group(['namespace' => 'auth'], function($app){

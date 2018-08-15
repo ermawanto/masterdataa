@@ -31,7 +31,8 @@ $app->group(['namespace' => 'auth'], function($app){
 // 	$app->delete($api . '/customer/{id}', ['uses' => 'CustomerController@deleteCustomer', 'as' => 'deleteCustomer']);
 // });
 
-$app->get('api/customers','CustomerController@index');
+$app->get('customers',['uses' => 'CustomerController@index', 'as' => 'customers.index']);
+$app->get('api/customers','CustomerController@show');
 $app->post('api/customers','CustomerController@saveCustomer');
 $app->put('api/customers/{id}','CustomerController@updateCustomer');
 $app->delete('api/customers/{id}','CustomerController@deleteCustomer');

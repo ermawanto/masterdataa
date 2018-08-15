@@ -9,9 +9,12 @@ use Illuminate\Http\Request;
 class CustomerController extends Controller {
 
 	public function index() {
-		$customer = Customer::all();
+		return view('customers.index');
+	}
+
+	public function show(){
+		$customer = Customer::orderBy('kode_customer')->get();
 		return response()->json($customer);
-		
 	}
 
 	public function detailCustomer($id) {

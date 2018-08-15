@@ -17,9 +17,17 @@
         <table class="table table-bordered text-center">
           <thead >
             <tr>
-              <th class="no">No</th>
-              <th>Kode Sekolah</th>
-              <th>Nama Sekolah</th>
+              <th class="no">Id</th>
+              <th>Kode Customer</th>
+              <th>Nama Customer</th>
+              <th>Nama Pimpinan</th>
+              <th>Kode Propinsi</th>
+              <th>Kode Kabupaten</th>
+              <th>Sales Group</th>
+              <th>No Telepon</th>
+              <th>NPWP</th>
+              <th>Email</th>
+              <th>Active</th>
               <th class="action">Action</th>
             </tr>
           </thead>

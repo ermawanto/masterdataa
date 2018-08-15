@@ -11,13 +11,15 @@
 |
 */
 
-$app->get('/', function(){
+$app->get('/',function(){
 	return view('welcome');
 });
 
 $app->group(['namespace' => 'auth'], function($app){
 	$app->get('/login', ['as'=>'login','uses'=>'Login@show']);
 	$app->post('/login',['as'=>'toLogin','uses'=>'Login@toLogin']);
+	$app->get('/register',['as'=>'register','uses'=>'Register@show']);
+	$app->post('/register',['as'=>'toRegister','uses'=>'Register@toLogin']);
 });
 
 $app->group(['namespace' => 'App\Http\Controller'], function ($app) {

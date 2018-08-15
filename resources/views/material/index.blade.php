@@ -17,9 +17,14 @@
         <table class="table table-bordered text-center">
           <thead >
             <tr>
-              <th class="no">No</th>
-              <th>Kode Sekolah</th>
-              <th>Nama Sekolah</th>
+              <th class="no">Id</th>
+              <th>Produk Desc</th>
+              <th>Material Code</th>
+              <th>Code Jenis Produk</th>
+              <th>Nama Jenis Produk</th>
+              <th>Group Produk</th>
+              <th>Group Produk Desc</th>
+              <th>Active</th>
               <th class="action">Action</th>
             </tr>
           </thead>
@@ -33,3 +38,5 @@
     </div>
   </div>
 @endsection
+
+ 

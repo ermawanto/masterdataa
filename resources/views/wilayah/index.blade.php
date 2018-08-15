@@ -17,9 +17,13 @@
         <table class="table table-bordered text-center">
           <thead >
             <tr>
-              <th class="no">No</th>
-              <th>Kode Sekolah</th>
-              <th>Nama Sekolah</th>
+              <th class="no">Id</th>
+              <th>Sales Officer</th>
+              <th>Code Kabupaten</th>
+              <th>Kabupaten</th>
+              <th>Sales Group</th>
+              <th>Code Kecamatan</th>
+              <th>Kecamatan</th>
               <th class="action">Action</th>
             </tr>
           </thead>
@@ -33,3 +37,4 @@
     </div>
   </div>
 @endsection
+

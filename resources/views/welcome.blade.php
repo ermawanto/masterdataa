@@ -1,5 +1,9 @@
 @extends('_layouts.default')
 
 @section('content')
-  <h1>welcome</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">Welcome</div>
+    </div>
+  </div>
 @endsection

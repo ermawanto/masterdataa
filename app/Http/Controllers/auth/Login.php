@@ -3,7 +3,11 @@
 namespace app\Http\Controllers\auth;
 
 class Login{
-  public function index(){
-      return view('')
+  public function show(){
+      return view('auth.login');
+  }
+
+  public function toLogin(){
+    return 'to login';
   }
 }

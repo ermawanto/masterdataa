@@ -16,7 +16,8 @@ $app->get('/', function(){
 });
 
 $app->group(['namespace' => 'auth'], function($app){
-	$app->get('/login', 'Login@index');
+	$app->get('/login', ['as'=>'login','uses'=>'Login@show']);
+	$app->post('/login',['as'=>'toLogin','uses'=>'Login@toLogin']);
 });
 
 $app->group(['namespace' => 'App\Http\Controller'], function ($app) {

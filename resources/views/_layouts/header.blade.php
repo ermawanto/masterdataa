@@ -18,9 +18,9 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="api/customers">Customer</a></li>
-            <li><a href="#">Material</a></li>
-            <li><a href="#">Plantsloc</a></li>
-            <li><a href="#">Wilayah</a></li>
+            <li><a href="api/material">Material</a></li>
+            <li><a href="api/plantsloc">Plantsloc</a></li>
+            <li><a href="api/wilayah">Wilayah</a></li>
           </ul>
         </li>
       </ul>
@@ -31,6 +31,8 @@
         <button type="submit" class="btn btn-default">Search</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="login">Login</a></li>
+        <li><a href="register">Register</a></li>
         <li><a href="#">Logout</a></li>
       </ul>
     </div>

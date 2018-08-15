@@ -3,7 +3,7 @@
 @section('body')
   <div class="container">
     <div class="row">
-        <div class="col-sm-6 col-md-4 col-md-offset-4 batas-atas">
+        <div class="col-sm-6 col-md-4 col-md-offset-4" style="margin-top:150px">
           <div class="account-wall">
             <h2 align="center">Sign In</h2>
             <form class="form-signin" action="{{route('toLogin')}}" method="post">

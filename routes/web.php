@@ -42,7 +42,8 @@ $app->post('api/user','UserController@saveUser');
 $app->put('api/user/{id}','UserController@updateUser');
 $app->delete('api/user/{id}','UserController@deleteUser');
 
-$app->get('api/material','MaterialController@index');
+$app->get('material','MaterialController@index');
+$app->get('api/material','MaterialController@show');
 $app->post('api/material','MaterialController@saveMaterial');
 $app->put('api/material/{id}','MaterialController@updateMaterial');
 $app->delete('api/material/{id}','MaterialController@deleteMaterial');

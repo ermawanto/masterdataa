@@ -7,11 +7,13 @@ use App\Models\Material;
 use Illuminate\Http\Request;
 
 class MaterialController extends Controller {
+	public function index(){
+		return view('material.index');
+	}
 
-	public function index() {
+	public function show() {
 		$material = Material::all();
 		return response()->json($material);
-		// return 'controller bisa';
 	}
 
 	public function detailMaterial($id) {

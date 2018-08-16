@@ -11,7 +11,7 @@ $(document).ready(function(){
   $.ajax({
     dataType:'json',
     url: window.location.origin + '/api/customers',
-    method: 'get',
+    type: 'get',
     data: {page:page},
     success: function(data){
       manageRow(data);
@@ -46,7 +46,7 @@ $(document).ready(function(){
     $.ajax({
       dataType:'json',
       url: window.location.hostname+'api/customers',
-      method: 'post',
+      type: 'post',
       data: {page: page},
       success: function(data){
         console.log(data);

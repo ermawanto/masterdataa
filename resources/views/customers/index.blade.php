@@ -31,10 +31,8 @@
               <th class="action">Action</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td></td>
-            </tr>
+          <tbody class="customer">
+
           </tbody>
         </table>
       </div>

@@ -23,5 +23,6 @@
 
     @yield('body')
 
+  <script src="{{url('js/customer.js')}}"></script>
   </body>
 </html>

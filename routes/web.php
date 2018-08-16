@@ -25,7 +25,6 @@ $app->group(['namespace' => 'auth'], function($app){
 $app->get('customers',['uses' => 'CustomerController@index', 'as' => 'customers.index']);
 $app->get('customers/create',['uses' => 'CustomerController@create','as'=>'customers.create']);
 $app->get('customers/edit/{id}',['uses' => 'CustomerController@edit', 'as' => 'customers.edit']);
-
 $app->get('api/customers','CustomerController@show');
 $app->post('api/customers','CustomerController@saveCustomer');
 $app->put('api/customers/{id}','CustomerController@updateCustomer');

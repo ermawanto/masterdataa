@@ -14,22 +14,22 @@
     <br>
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
-        <form action="#" method="post">
+        {{-- <form action="" method="post"> --}}
           <input type="hidden" name="_method" value="#">
           <div class="row">
             <div class="col-md">
               <div class="form-group">
-                <label for="nama">Nama Sekolah</label>
-                <input type="text" name="nama" id="nama" class="form-control" value="">
+                <label for="kode_customer">Kode Customer</label>
+                <input type="text" name="kode_customer" id="kode_customer" class="form-control" value="">
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-1 col-md-offset-9">
-              <button type="submit" class="btn btn-md btn-success">Oke</button>
+              <button type="submit" id="submit" class="btn btn-md btn-success">Oke</button>
             </div>
           </div>
-        </form>
+        {{-- </form> --}}
       </div>
     </div>
   </div>

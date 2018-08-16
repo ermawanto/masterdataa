@@ -31,8 +31,10 @@ class CustomerController extends Controller {
 	}
 
 	public function saveCustomer(Request $request) {
-		$customer = Customer::create($request->all());
-		return response()->json($customer);
+		// $customer = Customer::create($request->all());
+		// return response()->json($customer);
+
+		return $request->data;
 	}
 
 	public function deleteCustomer($id) {

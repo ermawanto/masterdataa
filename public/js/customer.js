@@ -10,7 +10,8 @@ $(document).ready(function(){
   // show customers
   $.ajax({
     dataType:'json',
-    url: 'api/customers',
+    url: window.location.origin + '/api/customers',
+    method: 'get',
     data: {page:page},
     success: function(data){
       manageRow(data);
@@ -25,8 +26,8 @@ $(document).ready(function(){
   	  	rows = rows + '<td>'+value.kode_customer+'</td>';
   	  	rows = rows + '<td>'+value.nama_customer+'</td>';
   	  	rows = rows + '<td data-id="'+value.id+'">';
-                  rows = rows + '<button data-toggle="modal" data-target="#edit-item" class="btn btn-primary edit-item">Edit</button> ';
-                  rows = rows + '<button class="btn btn-danger remove-item">Delete</button>';
+                  rows = rows + '<button data-toggle="modal" data-target="#edit-item" class="btn btn-primary btn-sm edit-item">Edit</button> ';
+                  rows = rows + '<button class="btn btn-danger btn-sm remove-item">Delete</button>';
                   rows = rows + '</td>';
   	  	rows = rows + '</tr>';
   	});
@@ -34,4 +35,22 @@ $(document).ready(function(){
 
   	$("tbody.customer").html(rows);
   }
+
+  $(document).on('click','#submit',function(){
+    var kode_customer = $('#kode_customer').val();
+
+    var data = {
+      'kode_customer': kode_customer,
+    };
+
+    $.ajax({
+      dataType:'json',
+      url: window.location.hostname+'api/customers',
+      method: 'post',
+      data: {page: page},
+      success: function(data){
+        console.log(data);
+      }
+    });
+  });
 });
